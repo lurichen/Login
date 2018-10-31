@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title used by search engines for ranking and by browsers to keep track of tabs -->
+	<title>Pantalla de Login</title>
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-functions.js"></script>
+
+<script>
+  var config = {
+    // ...
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+
+	<!-- Conexion a Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAU8lvzdRC5QA_CzCaB2NdpSs8kWAOWRyQ",
+    authDomain: "muachile-81afe.firebaseapp.com",
+    databaseURL: "https://muachile-81afe.firebaseio.com",
+    projectId: "muachile-81afe",
+    storageBucket: "muachile-81afe.appspot.com",
+    messagingSenderId: "157612617310"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- links the html and css file together. Without this, the CSS won't be applied to the webpage. -->
+
+	<link rel="stylesheet" href="login.css">
+	<script src="firebaseui.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+		<div class="muaImagen">
+		<!--<img src="original.jpg"-->
+			<div id="login_form" class="loginBox">
+				<h1>Una mujer a la vez...</h1>
+					<h2>Mujeres Unidas y Activas</h2>
+	  					<input type="text" name="Correo electronico" id="correoElectronico" placeholder="&#128231; @mujeresunidas.net" style="height:50px; width:200px"><br>
+	  					<input type="password" name="Contrasena" id="contrasena" placeholder="&#128272; contrasena" style="height:50px; width:200px"><br>
+	  				
+	  					<button onclick="login()" class="iniciar" target="_self"><span>Iniciar </span></button>
+	  		</div>
+	 	</div>
+
+</body>
+</html>
